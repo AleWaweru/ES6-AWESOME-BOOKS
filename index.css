@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2px;
+  font-family: 'Comic Neue', cursive;
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgb(250, 249, 249);
+  color: black;
+}
+
+hr {
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.nav-bar,
+footer {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar-title {
+  display: flex;
+  align-items: center;
+}
+
+.list-add-contact {
+  display: flex;
+  gap: 0.5rem;
+  padding-right: 10px;
+}
+
+.nav-add {
+  padding: 0 20px 0 20px;
+}
+
+.nav-contact {
+  padding: 0 0 0 20px;
+}
+
+.nav-list {
+  padding: 0 20px 0 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(231, 229, 229);
+}
+
+.book-details {
+  display: flex;
+}
+
+.add-title-and-author {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 2rem;
+  row-gap: 10px;
+  max-width: 200px;
+}
+
+.remove-container {
+  margin-left: 90px;
+}
+
+.add-button-container {
+  text-align: right;
+}
+
+.added-books {
+  border: 3px solid black;
+  width: 95%;
+  margin-left: 5px;
+}
+
+.main {
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.alert-message {
+  text-align: center;
+  color: red;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contact ul,
+.contact p {
+  padding-left: 50px;
+  padding-bottom: 1rem;
+  list-style: circle;
+  margin: 0 auto;
+}
+
+.contact li {
+  padding: 5px 0;
+}
+
+footer {
+  background-color: rgb(216, 209, 190);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+}
+
+#showDate {
+  text-align: right;
+  padding-right: 50px;
+}
+
+/* ////////////////// DOM //////////////// */
+.hide {
+  display: none;
+}
+
+.n {
+  margin-left: 1080px;
+}
+
+.bu {
+  width: 80px;
+  background-color: bisque;
+}
+
+@media only screen and (min-width: 768px) {
+  .added-books {
+    border: 3px solid black;
+    width: 60%;
+    margin-left: 20%;
+  }
+}
