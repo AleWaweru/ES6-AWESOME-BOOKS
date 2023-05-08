@@ -10,7 +10,7 @@ export default class Book {
     this.author = author;
   }
 
-  static addBook() {
+  static addBook = () => {
     if (newTitle.value !== '' && newAuthor.value !== '') {
       const book = new Book(newTitle.value, newAuthor.value);
       booksArray.push(book);
@@ -20,12 +20,12 @@ export default class Book {
     }
   }
 
-  static removeBook(index) {
+  static removeBook = (index) => {
     booksArray.splice(index, 1);
     localStorage.setItem('added-books', JSON.stringify(booksArray));
   }
 
-  static render() {
+  static render = () => {
     addedBooks.innerHTML = '';
     for (let i = 0; i < booksArray.length; i += 1) {
       const html = `
